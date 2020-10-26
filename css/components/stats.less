@@ -1,0 +1,36 @@
+// main: ../main.less
+
+.stats{
+    
+    
+    background-color: #95e1d3;
+
+    &__inner{
+        display: flex;
+    }
+
+    &__item{
+        flex: 1 1 0;
+
+        align-items: center;
+        text-align: center;
+        border-left: 1px solid #b5eae0;
+        color: #fff;
+        padding: 75px 25px;
+
+        &:last-child{
+            border-right: 1px solid #b5eae0;
+        }
+    }
+
+    &__count{
+        font-size: 72px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}

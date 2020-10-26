@@ -1,0 +1,58 @@
+// main: ../main.less
+
+.slider{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-number{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    &__item{
+        width: 23%;
+        padding: 25px 0;
+
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+        opacity: .7;
+
+        border-top: 3px solid #fff;
+
+        position: relative;
+
+        &.active{
+            opacity: 1;
+        }
+
+        &:before{
+            display: block;
+            content: '';
+            width: 0;
+            height: 3px;
+            position: absolute;
+            top: -3px;
+            left: 0;
+            background-color: #f38181;
+            z-index: 1;
+
+            transition: width .2s linear; 
+
+        }
+
+        &:hover:before{
+            width: 100%;
+        }
+    }
+
+}

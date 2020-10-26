@@ -1,0 +1,64 @@
+// main: ../main.less
+
+.accordion{
+    &__item{
+        border: 1px solid #e5e5e5;
+        margin-bottom: 10px;
+        &.active{
+            .accordion__content{
+                display: block;
+            }
+
+            .accordion__arrow{
+                transform: rotate(180deg);
+                margin-top: -10px;
+            }
+
+            .accordion__header{
+                border-bottom-color: #e5e5e5;
+            }
+        }
+    }
+
+    &__header{
+        padding: 15px 20px 15px 60px;
+        border-bottom: 1px solid transparent;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__icon{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        z-index: 1;
+
+        transform: translateY(-50%);
+    }
+
+    &__title{
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #333;
+    }
+
+    &__arrow{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        z-index: 1;
+
+        transform: translateY(-50%);
+    }
+    
+    &__content{
+        display: none;
+        padding: 15px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 300;
+        color: #999;
+        min-height: 206px;
+    }
+}

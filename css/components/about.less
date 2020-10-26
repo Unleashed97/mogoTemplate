@@ -1,0 +1,52 @@
+// main: ../main.less
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    &__item{
+        width: 380px;
+        background-color: #95e1d3;
+        position: relative;
+
+        &:hover .about__img{
+            transform: translate3d(-8px, -8px, 0);
+        }
+        &:hover .about__img img{
+            opacity: .1;
+        }
+        &:hover .about__layout{
+            opacity: 1;
+        }
+    }
+
+    &__img{
+        background: linear-gradient(to bottom, #fce38a, #f38181);
+        transition: transform .2s linear;
+
+        img{
+            display: block;
+            transition: opacity .2s linear;
+        }
+
+    }
+
+    &__layout{
+       width: 100%;
+
+       position: absolute;
+       top: 50%;
+       left: 0;
+       transform: translate3d(0, -50%, 0);
+       text-align: center;
+       z-index: 2;
+       opacity: 0;
+    }
+
+    &__text{
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+}
