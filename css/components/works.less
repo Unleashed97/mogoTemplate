@@ -1,0 +1,63 @@
+// main: ../main.less
+
+.works{
+    display: flex;
+
+    &__col{
+        flex: 1 1 0;
+    }
+
+    &__item{
+        background: linear-gradient(to bottom, #fce38a, #f38181);
+        position: relative;
+
+        &:hover{
+
+            .works__info{
+                opacity: 1;
+            }
+
+            .works__photo{
+                opacity: 0.1;
+            }
+        }
+    }
+
+    &__photo{
+        transition: opacity .2s linear;
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
+    &__info{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 15px;
+        color: #fff;
+        opacity: 0;
+
+        transition: opacity .2s linear;
+        
+    }
+
+    &__title{
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+
+    &__text{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        font-style: italic;
+    }
+}

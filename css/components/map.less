@@ -1,0 +1,28 @@
+// main: ../main.less
+
+.map{
+    text-align: center;
+    &__title
+    {
+        color: #f38181;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        text-decoration: none;
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &:after
+        {
+            display: block;
+            content: '';
+            width: 60px;
+            height: 3px;
+            background-color: #f38181;
+            margin: 20px auto 0px;
+        }
+    }
+}

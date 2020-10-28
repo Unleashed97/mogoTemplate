@@ -1,0 +1,195 @@
+// main: ../main.less
+
+.footer{
+    padding-top: 70px;
+    background-color: #f8f8f8;
+
+    &__inner{
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    &__col{
+        flex: 1 1 0;
+        margin-right: 20px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__col-title
+    {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+
+    &__company-info{
+        // margin-bottom: 40px;
+    }
+
+    &__logo{
+
+        h1{
+            font-size: 46px;
+            font-weight: bold;
+            color: #ccc;
+        }
+    }
+
+    &__about-text{
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            color: #999;
+            line-height: 1.5;
+        }
+    }
+
+    &__social{
+        margin: 10px 0;
+
+        // width of the first col
+        width: 490px;
+    }
+
+    &__num-followers{
+        font-size: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e5e5e5;
+        span{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    &__social-links{
+        margin-top: 10px;
+
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            color: #999;
+        }
+    }
+
+    &__social-icons{
+        vertical-align: middle;
+        i{
+            display: inline-block;
+            color: #95e1d3;
+            padding: 5px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    &__mail{
+        margin-top: 30px;
+        position: relative;
+        input[type='email']{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e7e7e7;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999;
+            outline: none;
+
+            &:focus{
+                border: 1px solid #95e1d3;
+            }
+        }
+
+        input[type='submit']{
+            position: absolute;
+            top: 0px;
+            right: 0;
+            padding: 11px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: #95e1d3;
+            border: 1px solid #95e1d3;
+            outline: none;
+            color: #fff;
+            z-index: 1;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #5bc4b1;
+            }
+        }
+    }
+
+    //col2
+
+    &__blog-item{
+        padding-left: 140px;
+        margin-bottom: 30px;
+        vertical-align: middle;
+
+        position: relative;
+    }
+
+    &__blog-item-photo
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__blog-item-info{
+        display: inline-block;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        span{
+            font-family: 'Roboto',sans-serif;
+            font-size: 13px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999;
+        }
+    }
+
+    // col3
+
+    &__inst-block{
+        width: 280px;
+    }
+
+    &__inst-block-link{
+        a{
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__bottom{
+        display: block;
+        padding: 20px 0;
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+
+        span{
+            color: #f49f9f;
+        }
+    }
+
+
+}
