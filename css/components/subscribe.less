@@ -1,0 +1,51 @@
+// main: ../main.less
+
+.subscribe{
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+    margin-top: 30px;
+
+    &__input{
+        width: 60%;
+        line-height: 1.1;
+        padding: 12px;
+        border: 1px solid #e7e7e7;
+        border-right: 0;
+        outline: none;
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+
+        &::placeholder{
+            color: #ccc;
+        }
+
+        &:focus{
+            border: 1px solid #95e1d3;
+        }
+    }
+
+    &__button{
+        width: 40%;
+        line-height: 1.1;
+        padding: 12px 30px;
+        background-color: #95e1d3;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        transition: background .2s linear;
+
+        &:hover{
+            background-color: #5bc4b1;
+        }
+    }
+}
