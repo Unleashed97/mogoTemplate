@@ -2,14 +2,15 @@
 
 .card{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 80px;
+    margin: 80px -15px 0;
 
-    // &__item{
-    //     width: 380px;
-        
-    // }
-    
+    &__item{
+        width: 33.33333%;
+        padding: 0 15px;
+    }
+
     &__inner{
         background-color: #95e1d3;
         
@@ -75,6 +76,24 @@
         font-style: italic;
         font-size: 15px;
         color: #999;
+    }
+
+    // MEDIA
+    @media @tablet{
+
+        &{
+            justify-content: center;
+            margin: 40px -15px 0;
+        }
+        &__item{
+            width: 100%;
+            max-width: 410px;
+            margin-bottom: 30px;
+            
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
     }
 
 }

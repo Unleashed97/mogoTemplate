@@ -2,11 +2,12 @@
 
 .services{
     display: flex;
+    flex-wrap: wrap;
     // padding: 25px;
     &__item{
-        flex: 1 1 0;
-        padding-left: 80px;
-        padding-right: 30px;
+        width: 33.33333%;
+        padding: 0 35px 30px 80px;
+        margin-bottom: 30px;
 
         position: relative;
 
@@ -31,6 +32,19 @@
         font-size: 15px;
         color: #999;
     }
+    // MEDIA
+    @media @tablet{
+        &__item{
+            width: 50%;
+        }
+    }
 
+    @media @mobile{
+
+
+        &__item{
+            width: 100%;
+        }
+    }
 
 }

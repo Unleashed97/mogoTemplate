@@ -1,0 +1,55 @@
+// main: ../main.less
+
+.instagram{
+
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__photo-link{
+        width: 33%;
+        text-decoration: none;
+
+        &:hover{
+            img{
+                opacity: .5;
+            }
+        }
+
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            transition: opacity .2s linear;
+        }
+
+    }
+
+    &__link{
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999;
+            text-decoration: none;
+            transition: color .2s linear;
+
+        a:hover{
+            text-decoration: underline;
+            color: #95e1d3;
+        }
+    }
+
+    // MEDIA
+    @media @laptop{
+        &__items{
+            justify-content: flex-start;
+        }
+
+        &__photo-link{
+            width: auto;
+        }
+    }
+}

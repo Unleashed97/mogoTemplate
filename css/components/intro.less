@@ -11,7 +11,7 @@
     background-size: cover;
 
     &__inner{
-        width: 880px;
+        width: 80%;
         margin: 0 auto;
         
         text-align: center;
@@ -38,6 +38,47 @@
             height: 3px;
             background-color: #fff;
             margin: 50px auto;
+        }
+    }
+
+    // MEDIA
+    @media @desktop{
+    
+        &__suptitle{
+            font-size: 60px;
+        }
+        &__title{
+            font-size: 120px;
+        }
+    }
+    
+    @media @laptop{
+    
+        &__suptitle{
+            font-size: 40px;
+        }
+        &__title{
+            font-size: 80px;
+        }
+    }
+    
+    @media @tablet{
+    
+        &__suptitle{
+            font-size: 30px;
+        }
+        &__title{
+            font-size: 60px;
+        }
+    }
+    
+    @media @mobile{
+    
+        &__suptitle{
+            font-size: 20px;
+        }
+        &__title{
+            font-size: 40px;
         }
     }
 }

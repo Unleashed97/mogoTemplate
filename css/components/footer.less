@@ -6,13 +6,14 @@
 
     &__inner{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 60px;
     }
 
     &__col{
 
-        &--about{
+        &--about-company{
             width: 40%;
         }
 
@@ -86,80 +87,6 @@
         }
     }
 
-    //col2
-
-    &__blog-item{
-        margin-bottom: 25px;
-
-        a{
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #333;
-            transition: color .2s linear;
-
-            &:hover{
-                color: #95e1d3;
-            }
-        }
-    }
-
-    &__blog-item-info{
-        margin-left: 20px;
-        font-size: 12px;
-        text-transform: uppercase;
-        line-height: 1.5;
-
-        p{
-            margin: 0 0 10px;
-        }
-
-        span{
-            font-family: 'Roboto',sans-serif;
-            font-size: 13px;
-            font-weight: 300;
-            font-style: italic;
-            color: #999;
-        }
-    }
-
-    // col3
-
-    &__inst-block{
-
-        a{
-            text-decoration: none;
-
-            &:hover{
-                img{
-                    opacity: .5;
-                }
-            }
-        }
-
-        img{
-            transition: opacity .2s linear;
-        }
-
-    }
-
-    &__inst-block-link{
-        a{
-            font-family: 'Roboto', sans-serif;
-            font-size: 13px;
-            font-weight: 300;
-            font-style: italic;
-            color: #999;
-            text-decoration: none;
-            transition: color .2s linear;
-        }
-
-        a:hover{
-            text-decoration: underline;
-            color: #95e1d3;
-        }
-    }
-
     &__copyright{
         display: block;
         padding: 20px 0;
@@ -171,5 +98,41 @@
         }
     }
 
+    // MEDIA
+    @media @laptop{
+        &__col--about-company{
+            width: 100%;
+        }
 
+        // &__about-text{
+        //     max-width: 380px;
+        // }
+
+        &__col--blog,
+        &__col--inst{
+            width: 48%;
+
+        }
+
+        &__col--blog{
+            margin-right: 20px;
+   
+        }
+    }
+
+    @media @tablet{
+        &__col--about-company{
+            width: 100%;
+        }
+
+        &__col--blog,
+        &__col--inst{
+            width: 100%;
+        }
+
+        &__col--blog{
+            margin-right: 0;
+   
+        }
+    }
 }

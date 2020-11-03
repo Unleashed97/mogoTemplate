@@ -2,6 +2,13 @@
 
 .services-detail{
     display: flex;
+    // flex-wrap: wrap;
+
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &__item{
         width: 50%;
 
@@ -9,6 +16,24 @@
             display: block;
             max-width: 100%;
             height: auto;
+        }
+    }
+
+    // MEDIA
+    @media @desktop{
+        &{
+            justify-content: center;
+        }
+        &__inner{
+            max-width: 570px;
+        }
+
+        &__item{
+            width: 100%;
+            
+            &:first-child{
+                margin-bottom: 30px;
+            }
         }
     }
 }

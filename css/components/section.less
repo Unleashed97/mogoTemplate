@@ -57,11 +57,40 @@
         font-size: 15px;
         color: #b9b9b9;
     }
+
+    // MEDIA
+    @media @tablet{
+        &{
+            padding: 40px 0;
+
+            &--devices{
+                padding-bottom: 0;
+            }
+
+            &--works{
+                padding-bottom: 0;
+            }
+
+            &--clients{
+                padding: 40px 0 0;
+            }
+        }
+
+        &__header{
+            margin-bottom: 30px;
+        }
+
+        &__suptitle{
+            font-size: 20px;
+        }
+
+        &__title{
+            font-size: 25px;
+
+            &:after{
+                margin: 20px auto;
+            }
+        }
+    }
+    
 }
-
-// Wrapper for layout (device section)
-// .wrapper{
-//     width: 100%;
-//     background: rgba(255, 255, 255, 0.85);
-
-// }

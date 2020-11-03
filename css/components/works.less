@@ -2,6 +2,7 @@
 
 .works{
     display: flex;
+    flex-wrap: wrap;
 
     &__col{
         flex: 1 1 0;
@@ -59,5 +60,20 @@
         font-weight: 300;
         font-size: 15px;
         font-style: italic;
+    }
+
+    // MEDIA
+    @media @tablet{
+        &__col{
+            flex: none;
+            width: 50%;
+        }
+    }
+
+    @media @mobile{
+        &__col{
+            flex: none;
+            width: 100%;
+        }
     }
 }

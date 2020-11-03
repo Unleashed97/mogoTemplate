@@ -1,0 +1,45 @@
+// main: ../main.less
+
+.blog-list{
+    &__item{
+        margin-bottom: 25px;
+    
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            transition: color .2s linear;
+    
+            &:hover{
+                color: #95e1d3;
+            }
+        }
+    }
+
+    &__photo{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    &__title{
+        margin-left: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 1.5;
+    
+        p{
+            margin: 0 0 10px;
+        }
+    
+        span{
+            font-family: 'Roboto',sans-serif;
+            font-size: 13px;
+            font-weight: 300;
+            font-style: italic;
+            color: #999;
+        }
+    }
+
+}
