@@ -17,22 +17,32 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">
+                <a class="header__logo" href="#">
                     Mogo
-                </div>
+                </a>
                 <nav class="nav">
-                    <a class="nav__link active" href="#">About</a>
-                    <a class="nav__link" href="#">Service</a>
-                    <a class="nav__link" href="#">Work</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Contact</a>
-                    <a class="nav__link" href="#">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                    <a class="nav__link" href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
+                    <div class="nav__inner">
+                        <a class="nav__link" href="#" data-scroll="#about">About</a>
+                        <a class="nav__link" href="#" data-scroll="#service">Service</a>
+                        <a class="nav__link" href="#" data-scroll="#work">Work</a>
+                        <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                        <a class="nav__link" href="#" data-scroll="#contact">Contact</a>
+                        <a class="nav__link" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Cart</span>
+                        </a>
+                        <a class="nav__link" href="#">
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </a>
+                    </div>
                 </nav>
+
+                <div class="nav-toggle">
+                    <span class="nav-toggle__item nav-toggle__item--first"></span>
+                    <span class="nav-toggle__item nav-toggle__item--second"></span>
+                    <span class="nav-toggle__item nav-toggle__item--third"></span>
+                </div>
             </div>
         </div>
     </header>
@@ -69,7 +79,7 @@
             </div>
         </div>
     </div>
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <header class="section__header">
                 <h3 class="section__suptitle">What we do</h3>
@@ -147,7 +157,7 @@
             </div>
         </div>
     </div>
-    <section class="section">
+    <section class="section" id="service">
         <div class="container">
             <header class="section__header">
                 <h3 class="section__suptitle">We work with</h3>
@@ -381,12 +391,29 @@
     <div class="logotypes">
         <div class="container">
             <div class="logotypes__inner">
-                <img src="images/employee/logos.png" alt="">
+                <div class="logotypes__item">
+                    <img class="logotypes__photo" src="images/logotypes/1.png" alt="">
+                </div>
+                <div class="logotypes__item">
+                    <img class="logotypes__photo" src="images/logotypes/2.png" alt="">
+                </div>
+                <div class="logotypes__item">
+                    <img class="logotypes__photo" src="images/logotypes/3.png" alt="">
+                </div>
+                <div class="logotypes__item">
+                    <img class="logotypes__photo" src="images/logotypes/4.png" alt="">
+                </div>
+                <div class="logotypes__item">
+                    <img class="logotypes__photo" src="images/logotypes/5.png" alt="">
+                </div>
+                <div class="logotypes__item">
+                    <img class="logotypes__photo" src="images/logotypes/6.png" alt="">
+                </div>
             </div>
         </div>
     </div>
 
-    <section class="section section--works">
+    <section class="section section--works" id="work">
         <div class="container">
             <header class="section__header">
                 <h3 class="section__suptitle">What we do</h3>
@@ -547,7 +574,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="blog">
         <div class="container">
             <header class="section__header">
                 <h3 class="section__suptitle">Our stories</h3>
@@ -630,7 +657,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__col footer__col--about-company">
@@ -684,7 +711,7 @@
                     <div class="blog-list">
                         <div class="blog-list__item">
                             <a href="#" target="_blank">
-                                <img class="blog-list__photo" src="images/footer/col2-1.jpg" alt="">
+                                <img class="blog-list__photo" src="images/footer/blog/1.jpg" alt="">
                                 <div class="blog-list__title">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
                                     <span>Jan 9, 2016</span>
@@ -693,7 +720,7 @@
                         </div>
                         <div class="blog-list__item">
                             <a href="#" target="_blank">
-                                <img class="blog-list__photo" src="images/footer/col2-2.jpg" alt="">
+                                <img class="blog-list__photo" src="images/footer/blog/2.jpg" alt="">
                                 <div class="blog-list__title">
                                     <p>Consectetur adipisicing elit sed do eiusmod tempor</p>
                                     <span>Jan 9, 2016</span>
@@ -702,9 +729,7 @@
                         </div>
                         <div class="blog-list__item">
                             <a href="#" target="_blank">
-                                <div class="blog-list__photo">
-                                    <img src="images/footer/col2-3.jpg" alt="">
-                                </div>
+                                <img class="blog-list__photo"src="images/footer/blog/3.jpg" alt="">
                                 <div class="blog-list__title">
                                     <p>sed do eiusmod tempor incididunt ut labore</p>
                                     <span>Jan 9, 2016</span>
@@ -718,31 +743,31 @@
                     <div class="instagram">
                         <div class="instagram__items">
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-1.jpg" alt="">
+                                <img src="/images/footer/inst/1.jpg" alt="">
                             </a>
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-2.jpg" alt="">
+                                <img src="/images/footer/inst/2.jpg" alt="">
                             </a>
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-3.jpg" alt="">
+                                <img src="/images/footer/inst/3.jpg" alt="">
                             </a>
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-4.jpg" alt="">
+                                <img src="/images/footer/inst/4.jpg" alt="">
                             </a>
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-5.jpg" alt="">
+                                <img src="/images/footer/inst/5.jpg" alt="">
                             </a>
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-6.jpg" alt="">
+                                <img src="/images/footer/inst/6.jpg" alt="">
                             </a>
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-7.jpg" alt="">
+                                <img src="/images/footer/inst/7.jpg" alt="">
                             </a>
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-8.jpg" alt="">
+                                <img src="/images/footer/inst/8.jpg" alt="">
                             </a>
                             <a class="instagram__photo-link" href="#">
-                                <img src="/images/footer/col3-9.jpg" alt="">
+                                <img src="/images/footer/inst/9.jpg" alt="">
                             </a>
                         </div>
                         <a class="instagram__link" href="#" target="_blank">View more photos</a>
@@ -754,5 +779,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/nav-toggle.js"></script>
+    <script src="js/header-fixed.js"></script>
+    <script src="js/smooth-scroll.js"></script>
 </body>
 </html>

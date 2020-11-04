@@ -5,6 +5,9 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    min-height: 820px;
+
+    position: relative;
 
 
     background: url("../images/intro.jpg") center no-repeat;
@@ -12,7 +15,7 @@
 
     &__inner{
         width: 80%;
-        margin: 0 auto;
+        margin: 50px auto;
         
         text-align: center;
     }
@@ -63,6 +66,9 @@
     }
     
     @media @tablet{
+        &{
+            min-height: 580px;
+        }
     
         &__suptitle{
             font-size: 30px;
@@ -71,9 +77,8 @@
             font-size: 60px;
         }
     }
-    
+
     @media @mobile{
-    
         &__suptitle{
             font-size: 20px;
         }
@@ -81,4 +86,5 @@
             font-size: 40px;
         }
     }
+
 }

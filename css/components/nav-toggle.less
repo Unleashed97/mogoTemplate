@@ -1,0 +1,45 @@
+// main: ../main.less
+
+.nav-toggle{
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    &--active{
+        .nav-toggle__item--second{
+            background: none;
+        }
+
+        .nav-toggle__item--first{
+            transform-origin: left top;
+            transform: rotate(45deg) translateX(1px);
+        }
+        
+        .nav-toggle__item--third{
+            transform-origin: left bottom;
+            transform: rotate(-45deg) translateX(1px);
+        }
+    }
+
+    &__item{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 8px;
+
+        transition: transform .2s linear,
+        background .2s linear;
+    }
+
+    // MEDIA
+    @media @tablet{
+        display: block;
+    }
+}

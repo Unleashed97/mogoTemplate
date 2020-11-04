@@ -52,7 +52,17 @@
     // MEDIA
     @media @mobile{
         &{
-            max-width: 300px;
+            flex-wrap: wrap;
+            max-width: none;
+
+            &__input, &__button{
+                width: 100%;
+            }
+            &__input{
+                margin-bottom: 10px;
+                border-right: 1px solid #e7e7e7;
+            }
+            
         }
     }
 }

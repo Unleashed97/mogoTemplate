@@ -2,13 +2,29 @@
 
 .header{
     width: 100%;
-    padding-top: 15px;
+    padding: 10px;
 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+
+    &--fixed{
+        background-color: #eb8b8d;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        transform: translate3d(0, 0, 0);
+    }
+
+    &--active{
+        background-color: #eb8b8d;
+    }
     
 
     &__inner{
@@ -23,6 +39,12 @@
         font-weight: 700;
         font-size: 30px;
         color: #fff;
+        text-decoration: none;
+    }
+
+    // MEDIA
+    @media @tablet{
+        padding: 10px 0;
     }
 
 }
