@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    <section class="section" id="about">
+    <section class="section" id="about" data-block="">
         <div class="container">
             <header class="section__header">
                 <h3 class="section__suptitle">What we do</h3>
@@ -228,7 +228,7 @@
                     </div>
                     <div class="services-detail__item">
                         <div class="accordion">
-                            <div class="accordion__item active">
+                            <div class="accordion__item active" data-collapse="#item1">
                                 <div class="accordion__header">
                                     <div class="accordion__icon">
                                         <img src="images/services-detail/photography.svg" alt="">
@@ -242,7 +242,7 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime et cum pariatur, harum eveniet maiores consequatur. Sapiente sequi voluptate id distinctio, necessitatibus laborum beatae illo libero reprehenderit alias magnam.</p>
                                 </div>
                             </div>
-                            <div class="accordion__item">
+                            <div class="accordion__item" data-collapse="#item2">
                                 <div class="accordion__header">
                                     <div class="accordion__icon">
                                         <img src="images/services-detail/creativity.svg" alt="">
@@ -256,7 +256,7 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime et cum pariatur, harum eveniet maiores consequatur. Sapiente sequi voluptate id distinctio, necessitatibus laborum beatae illo libero reprehenderit alias magnam.</p>
                                 </div>
                             </div>
-                            <div class="accordion__item">
+                            <div class="accordion__item" data-collapse="#item3">
                                 <div class="accordion__header">
                                     <div class="accordion__icon">
                                         <img src="images/services-detail/web-design.svg" alt="">
@@ -779,9 +779,13 @@
             </div>
         </div>
     </footer>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="js/nav-toggle.js"></script>
     <script src="js/header-fixed.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/menu-items.js"></script>
+    <script src="js/accordion.js"></script>
 </body>
 </html>
